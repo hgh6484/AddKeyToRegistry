@@ -1,0 +1,37 @@
+﻿<Window x:Class="Add2Registry.MainWindow"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="250" Width="700">
+    <Grid Margin="20">
+        <Label
+            FontSize="20"
+            Content="click Add to write registery key and click Del to delete registery key"
+            Name="lblComment"/>
+        <Button 
+            MaxWidth="200"
+            MaxHeight="50"
+            Margin="-250,0,0,0"
+            Click="btnAdd_Click"
+            Content="Add to Registery"
+            x:Name="btnAdd"/>
+        <Button 
+            MaxWidth="200"
+            MaxHeight="50"
+            Margin="250,0,0,0"
+            Click="btnDel_Click"
+            Content="Delete from Registery"
+            x:Name="btnDel"/>
+        <TextBox
+            FontSize="15"
+            MaxWidth="200"
+            MaxHeight="30"
+            Text="Test Value"
+            Margin="0,100,0,0"
+            VerticalContentAlignment="Center"
+            x:Name="txtVal"/>
+    </Grid>
+</Window>
