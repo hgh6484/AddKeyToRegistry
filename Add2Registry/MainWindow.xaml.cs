@@ -45,7 +45,7 @@ namespace Add2Registry
                 {
                     myKey.DeleteValue("HgH");
                     myKey.Close();
-                    MessageBox.Show("Register delited!");
+                    MessageBox.Show("Register deleted!");
                 }
             }
         }
